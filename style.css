@@ -1,11 +1,12 @@
 body {
   margin: 50px 120px;
   font-family: Cabin, "sans-serif";
+  min-width: 610px;
 }
 
 #main {
   width: 100%;
-  height: 800px;
+  height: 850px;
   max-width: 100%;
   border: 2px solid black;
 }
@@ -49,23 +50,46 @@ label:nth-child(-n + 2) {
   margin-left: 52%;
 }
 
+.divider {
+  height: 93px;
+}
+
 input {
   display: block;
   margin-bottom: 15px;
+}
+
+#dropdown {
+  margin-top: 7px;
 }
 
 .inline-field input,
 .inline-field label {
   display: inline-block;
   margin-bottom: 0;
-  vertical-align: middle;
+  vertical-align: center;
 }
 
-.inline-field:nth-child(-n + 1) {
+#radio-buttons {
   margin-top: 15px;
 }
 
+#buttons {
+  margin-top: 23px;
+}
 
-#dropdown {
-  margin-top: 7px;
+textarea {
+  margin-top: 33px;
+  width: 300px;
+  height: 90px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#submit {
+  margin-top: 20px;
+  width: 80px;
+  height: 35px;
+  border: none;
+
 }

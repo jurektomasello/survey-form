@@ -23,16 +23,23 @@
           <label id="email-label">Email:</label>
           <label id="number-label">Age:</label>
         </div>
+        
         <p>What is your current status?</p>
         <p>What can we improve?</p>
+
+        <div class="divider"></div>
+
         <p>Would you recommend us to one of your friends?</p>
+
+        <div class="divider"></div>
+
         <label id="comments">Any other comments or suggestions?</label>
       </div>
 
       <div class="right-side">
-        <input id="name" type="text">
-        <input id="email" type="email">
-        <input id="number" type="number">
+        <input id="name" name="name" type="text" placeholder="Enter your name">
+        <input id="email" name="email" type="email" placeholder="Enter your email">
+        <input id="number" name="number" type="number" placeholder="Age" min="16" max="120">
 
         <select id="dropdown">
           <option hidden>Choose one option</option>
@@ -42,28 +49,42 @@
           <option>Widow/Widower</option>
         </select>
 
-        <div class="inline-field">
-          <label><input type="checkbox" name="quality">Website</label>
-        </div>
+        <div id="buttons">
+          <div class="inline-field">
+            <label><input type="checkbox" name="quality" value="1">Website</label>
+          </div>
 
-        <div class="inline-field">
-          <label><input type="checkbox" name="quality">Custom service</label>
-        </div>
-        
-        <div class="inline-field">
-          <label><input type="checkbox" name="quality">Storage</label>
-        </div>
+          <div class="inline-field">
+            <label><input type="checkbox" name="quality" value="2">Custom service</label>
+          </div>
+          
+          <div class="inline-field">
+            <label><input type="checkbox" name="quality" value="3">Storage</label>
+          </div>
 
-        <div class="inline-field">
-          <label><input type="checkbox" name="quality">Other</label>
-        </div>
+          <div class="inline-field">
+            <label><input type="checkbox" name="quality" value="4">Other</label>
+          </div>
 
-        <input type="radio">
-        <input type="radio">
-        <input type="radio">
+          <div id="radio-buttons">
+            <div class="inline-field">
+              <label><input type="radio" name="radio-buttons" value="1">Not actually...</label>
+            </div>
+
+            <div class="inline-field">
+              <label><input type="radio" name="radio-buttons" value="2">Probably</label>
+            </div>
+
+            <div class="inline-field">
+              <label><input type="radio" name="radio-buttons" value="3">Absolutely!</label>
+            </div>
+          </div>
+
+          <textarea placeholder="Write your comment here!"></textarea>
+        </form>
       </div>
-    </form>
-  </div>
-</body>
 
-</html>
+      <button id="submit">Submit</button>
+    </body>
+
+    </html>
